@@ -1,0 +1,92 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #111;
+  color: #fff;
+}
+
+header nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 30px;
+  background: #000;
+}
+
+.menu {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.menu a {
+  color: white;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.menu a:hover, .menu a.active {
+  color: #f90;
+}
+
+.hero {
+  background: url("../assets/hero.jpg") center/cover no-repeat;
+  height: 70vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-shadow: 0 2px 5px black;
+}
+
+.cards {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+}
+
+.card {
+  background: #222;
+  padding: 15px;
+  border-radius: 8px;
+  max-width: 250px;
+  text-align: center;
+}
+
+.page {
+  padding: 50px;
+  text-align: center;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 15px;
+}
+
+.gallery img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+form input, form textarea {
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+}
+
+form button {
+  padding: 10px;
+  background: #f90;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
